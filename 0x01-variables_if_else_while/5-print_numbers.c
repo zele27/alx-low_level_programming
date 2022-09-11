@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - print if the number is positive, zero, or negative
- * this program prints " Programming is psitive,zero,or negative
+ * main - prints from zero to 9 numbers
  * Return: Always 0 (Success)
  */
- 
+
 int main(void)
 {
 	int number = 0;
