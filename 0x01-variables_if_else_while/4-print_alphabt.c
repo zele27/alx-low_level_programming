@@ -1,22 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * main - Print if the number is positive, zero, or negative
+ * main - entry point
  *
- * Description: using the main function
- * this program prints " Programming is positive, zero, or negative
+ * Description: prints the alphabet in lowercase, except q and e
  * Return: 0
  */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch ; 'z' ; ch++)
-{
-if (ch != 'e' && ch != 'q')
-{
-	putchar(ch);
-}
-}
-putchar('/n');
-return (0);
+
+	int ch;
+
+	for (ch = 'a', ch <= 'z'; ch++)
+		if (ch != 'e' && ch != 'q')
+			putchar(ch);
+	putchar('\n');
+	return (0);
 }
 
