@@ -2,22 +2,25 @@
 
 /**
  * print_alphabet_x10 - prints the lower alphabet 10 times
- * each time in new line
+ * Description: program that prints alphabet in lowercase 10 times
+ *
+ * Return: 0
  */
-
-void print_alphabet_x10(10)
+void print_alphabet_x10(void)
 {
-	int i = '0';
-	char letter = 'a';
+	int alpha;
+	int i = 0;
 
-	while (i <= '9')
+	while (i <= 9)
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
+		for (alpha = 'a'; alpha <= 'z'; alpha++)
 		{
-			_putchar(letter);
-		}
-		_putchar('\n');
-		i++;
+		_putchar(alpha);
 	}
+	_putchar('\n');
+
+	i++;
+
 }
+
 
