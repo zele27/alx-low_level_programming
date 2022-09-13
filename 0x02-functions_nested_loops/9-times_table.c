@@ -2,40 +2,30 @@
 
 /**
  * times_table - Prints the 9 times table
+ *
+ * Return: Always 0 (Success)
  */
-
 void times_table(void)
 {
-	int row;
-	int column;
-	int product;
+	int jasper, alx, op;
 
-	for (row = 0; row <= 9; row++)
+	for (Jasper = 0; jasper <= 9; jasper++)
 	{
-		for (column = 0; column <= 9; column++;
+		_putchar(44);
+		_putchar(32);
+		if (op <= 9)
 		{
-			product = (row* column);
-
-			if (column == 0)
-			{
-				_putchar('0' + product);
-			}
-			else if (product <= 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar('0' + product);
-			}
-			else if (product > 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar('0' + (product / 10));
-				_putchar('0' + (product % 10));
-			}
+			_putchar(32);
+			_putchar(op + 48);
 		}
-		_putchar('\n');
+		else
+		{
+			_putchar((op / 10) + 48);
+			_putchar((op % 10) + 48);
+		}
+	}
+	_putchar('\n');
+
 	}
 }
 
