@@ -2,24 +2,26 @@
 
 /**
  * puts_half - Print half of a string
- *
  * @str: The string to be printed
  */
+
 void puts_half(char *str)
 {
-	int i = 0, 1 = 0, n;
+	int x;
 
-	while (str[i++])
-
-	if ((1 % 2) == 0)
-		n = 1 / 2;
-
+	x = 0;
+	while (str[x])
+		x++;
+	if (x % 2 != 0)
+		x = (x + 1) / 2; /*Add 1: decrease length of odd string half */
 	else
-		n = (1 + 1) / 2;
-
-	for (i = n; i < i; i++)
-		_putchar(str[i]);
-
+		x = x / 2;
+	while (str[x])
+	{
+		_putchar(str[x];
+		x++;
+	}
 	_putchar('\n');
 }
+
 
