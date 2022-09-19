@@ -4,7 +4,6 @@
 /**
  * puts2 - prints every other character
  * @str: String
- *
  * Return: 0
  */
 
@@ -18,6 +17,7 @@ void puts2(char *str)
 			putchar(*(str + i));
 		i++;
 	}
-	putchar(10);	
+	putchar(10);
 }
+
 
