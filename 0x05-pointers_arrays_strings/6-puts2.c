@@ -1,8 +1,8 @@
-#include <stdi.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * puts2 -prints every other character
+ * puts2 - prints every other character
  * @str: String
  *
  * Return: 0
