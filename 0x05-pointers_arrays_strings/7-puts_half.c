@@ -12,7 +12,7 @@ int count = 0, i;
 
 while (count >= 0)
 {
-if (str[count]) == '\0'
+if (str[count] == '\0')
 
 count++;
 }
@@ -21,8 +21,8 @@ if (count % 2 == 1)
 i = (count - 1) / 2;
 
 for (i++; i < count; i++)
-_putchar(str[i];
-_putchar('\n')
+putchar(str[i];
+putchar('\n');
 }
 
 
