@@ -21,8 +21,10 @@ if (count % 2 == 1)
 i = (count - 1) / 2;
 
 for (i++; i < count; i++)
-putchar(str[i];
+putchar(str[i]);
 putchar('\n');
 }
+
+
 
 
