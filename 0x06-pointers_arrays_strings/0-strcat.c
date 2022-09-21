@@ -2,11 +2,10 @@
 
 /**
  * *_strcat - concatenates two strings
- * @dest: string
- * @src: string to add
- *
- * Return: the resulting string
+ * @dest: string to append to
+ * Return: pointer to the reulting string
  */
+
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
