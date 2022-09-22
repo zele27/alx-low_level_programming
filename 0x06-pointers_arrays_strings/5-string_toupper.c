@@ -19,6 +19,6 @@ s[i] -= 32;
 i++;
 }
 
-return (0);
+return (s);
 }
 
