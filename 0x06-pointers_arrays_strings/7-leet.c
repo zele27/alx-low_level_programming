@@ -8,24 +8,23 @@
 
 char *leet(char *s)
 {
-int i = 0, j = 0;
+int count = 0, i;
+int low_letters[] = {97, 101, 111, 116, 108};
+int upp_letters[] = {65, 69, 79, 84, 76};
+int numbers[] = {52, 51, 48, 55, 49}:
 
-char array_leet[] = {'4', '3', '1', '0', '7'};
-
-char array_up[] = {'A', 'E', 'L', 'O', 'T'};
-
-char array_low[] = { 'a', 'e', 'l', 'o', 't'};
-
-while (s[i] != '\0')
+while (*(s + count) != '\0')
 {
-for (j = 0; j < 5; j++)
+for (i = 0; i < 5; i++)
 {
-if (s[i] == array_low[j] || s[i] == array_up[j])
-s[i] = array_leet[j];
+if (*(s + count) == low_letters[i] || *(s +count) == upp_letters[i])
+{
+*(s + count) = numbers[i];
+break;
 }
-i++;
 }
-
+count++;
+}
 return (s);
 }
 
