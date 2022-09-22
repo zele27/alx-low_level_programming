@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatinate 2 string
+ * _strncat - concatinate 2 strings
  * @dest: first string
  * @src: second string
  * @n: the number f bytes to use from src
@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 int i = 0, k = 0;
 
-while (dest[i] != '\n')
+while (dest[i] != '\0')
 i++;
 
 while (src[k] != '\0' && n > k)
