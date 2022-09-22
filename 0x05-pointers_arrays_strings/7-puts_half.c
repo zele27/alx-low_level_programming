@@ -1,31 +1,32 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * puts_half - prints half of a string
- * @str:input string
- * Return: Always 0 (Success)
+ * puts_half-print every other character of a string
+ * @str: a pointer to an int that will be changed
+ *
+ * Description: if odd number of chars,print (length -1) / 2
  */
+
 void puts_half(char *str)
+
+int i, last;
+
+i = 0;
+while (str[i] != '\0')
 {
-int count = 0, i;
-
-while (count >= 0)
-{
-
-if (str[count] == '\0')
-count++;
-}
-if (count % 2 == 1)
-i = (count - 1) / 2;
-else
-i = (count - 1) / 2;
-for (i++; i < count; i++)
-
-putchar(str[i]);
-putchar('\n');
+i++;
 }
 
+last = (i + 1) / 2;
+
+for (i = last; str[i]; i++)
+{
+_putchar (str[i];
+}
+
+_putchar ('\n');
+
+}
 
 
 
