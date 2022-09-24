@@ -1,32 +1,25 @@
-#include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * puts_half-print every other character of a string
- * @str: a pointer to an int that will be changed
- *
- * Description: if odd number of chars, print (length - 1) /2
+ * main - generates keygen
+ * Return: 0 Always
  */
-
-void puts_half(char *str)
-
+inr main(void)
 {
-int i, last;
+int r = 0, c = 0;
+time_t t;
 
-i = 0;
-while (str[i] != '\0')
+srand((unsigned int) time(&t));
+while (c < 2772)
 {
-i++;
+r = rand() % 128;
+if ((c + r) > 2772)
+break;
+c = c + r;
+printf("%c", r);
 }
-
-last = (i + 1 ) / 2;
-
-for (i = last; str[i]; i++)
-{
-
-_putchar (str[i]);
-}
-
-_putchar ('\n');
-
+printf("%c\n", (2772 - c));
+return (0);
 }
 
