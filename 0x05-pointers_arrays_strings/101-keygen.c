@@ -7,7 +7,7 @@
  * Description: if odd number of chars, print (length - 1) /2
  */
 
-voidputs_half(char *str)
+void puts_half(char *str)
 
 {
 int i, last;
@@ -22,7 +22,8 @@ last = (i + 1 ) / 2;
 
 for (i = last; str[i]; i++)
 {
-_putchar (str[i];
+
+_putchar (str[i]);
 }
 
 _putchar ('\n');
