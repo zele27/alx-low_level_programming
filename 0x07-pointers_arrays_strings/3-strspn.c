@@ -1,24 +1,31 @@
 #include "main.h"
 
 /**
- * _strspn - gets length of a prefix substring
- *@s - input string to searh for substring
- *@accept: string to check against
- *Return:number of bytes of s in accept
+ * _strspn - return length of string that matchesvalues consistently
+ * @s: string to search
+ * @accept: target matches
+ * Return: number of bytes consecutively matched
  */
-usigned int _strspn(char *s, char *accept)
+
+unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i, j;
-for (i = 0; s[i]; i++)
+int i = 0, j;
+int matches = 0;
+
+while (*(s + i))
 {
-for (j = 0; accept[j]; j++)
+for (j = 0; *(accept + j); j++)
 {
-if (s[i] == accept[j])
+if (*(s + i) == *(accept +j))
+{
+matches++;
 break;
 }
-if (accept[j])
-break;
+if (*( accept + j + 1) == '\0' && *(s +i) != *(accept + j))
+return (matches);
 }
-return (i);
+i++;
+}
+return (atches);
 }
 
