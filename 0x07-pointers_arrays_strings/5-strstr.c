@@ -30,4 +30,3 @@ return (haystack + i);
 return (0);
 }
 
-
