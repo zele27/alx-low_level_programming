@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * print_chessboard - a function that prints a chessboard
- * @a:input pointer
- * Return: no return
+ * print_chessboard - prints the chessboard
+ * @a: pointer to pieces to print
+ *
+ * Return: number of bytes of s  in accept
  */
-void print_chessboard(char (*a)[8])
+unsigned int _strspn(char *s, char *accept)
 {
-unsigned int i, m = 0;
-
-for (i = 0; i < 64; i++)
+unsigned int i, j;
+for (i = 0; s[i]; i++)
 {
-if (i % 8 == 0 && i != 0)
+for (j = 0; accept[j]; j++)
 {
-m = i;
-_putchar('\n');
+if (s[i] == accept[j])
+break;
 }
-_putchar(a[i / 8][i -m]);
+if (!accept[j])
+break;
 }
-_putchar('\n');
-}
+return (i);
 
