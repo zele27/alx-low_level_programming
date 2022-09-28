@@ -1,19 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_chessboard - a function that prints a chessboard
- * @a: an array input to print
- * Return: Nothing
+ * print_diagsums - prints sum of #'s in diagnols of square
+ * @a: input square array
+ * @size: size of one dimension in array
+ * Return: void
  */
-void print_chessboard(char (*a)[8])
-{
-int i = 0, j;
 
-for (; i < 8; i++)
+void print_diagsums(int *a, int size)
 {
-for (j = 0; j < 8; j++)
-_putchar(a[i][j]);
-_putchar('\n');
-}
+int i, j, sum1 = 0, sum2 = 0;
+
+for (j = 0, i = size - 1; j < (size * size); j += size + 1, i += size - 1)
+sum1 += a[j], sum2 += a[i];
+printf("%d, %d\n", sum1, sum2);
 }
 
