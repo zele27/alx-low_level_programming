@@ -3,19 +3,19 @@
 #include <stdlib.h>
 
 /**
-
  *string_nconcat - concat 2 string
  *@s1: string 1
  *@s2: string 2
  *@n: integer value
  *Return: pointer points to a new allocated space else NULL
-
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *str;
-
 unsigned int s1_len, s2_len, i;
+
+
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
