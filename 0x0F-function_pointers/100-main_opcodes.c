@@ -23,7 +23,7 @@ printf("\n");
 }
 
 /**
- * main - print the opcodes og its own main function
+ * main - print the opcodes of its own main function
  * @argc: number of arguments passed to the function
  * @rgv: array of pointers to arguments
  *
