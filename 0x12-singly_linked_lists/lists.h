@@ -9,7 +9,9 @@
  *@str: string - placed in memory
  *@len: length of the string
  *@next: next point in the nod
+ *Author : zele27
  *Description: singly linked list structure
+ *For ALX project
  */
 typedef struct list_s
 {
